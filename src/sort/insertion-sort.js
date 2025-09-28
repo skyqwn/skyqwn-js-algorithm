@@ -1,4 +1,4 @@
-function insertionSort(array) {
+function insetionSort(array) {
   const n = array.length;
 
   for (let i = 1; i < n; i++) {
@@ -16,4 +16,4 @@ function insertionSort(array) {
   return array;
 }
 
-console.log(insertionSort([2, 16, 6, 29, 13, 50]));
+console.log(insetionSort([2, 6, 10, 29, 50, 13]));

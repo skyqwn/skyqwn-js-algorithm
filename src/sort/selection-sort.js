@@ -11,6 +11,9 @@ function selectionSort(array) {
     }
 
     if (minIndex !== i) {
+      // let temp = array[i];
+      // array[i] = array[minIndex];
+      // array[minIndex] = temp;
       [array[i], array[minIndex]] = [array[minIndex], array[i]];
     }
   }
@@ -18,4 +21,4 @@ function selectionSort(array) {
   return array;
 }
 
-console.log(selectionSort([77, 41, 6, 3, 4, 1, 14, 22, 53]));
+console.log(selectionSort([77, 41, 6, 4, 3, 2, 5, 222]));
