@@ -38,6 +38,7 @@ class LinkedList {
     this.head.next = null;
     this.head = first;
   }
+
   printList() {
     const array = [];
     let currentNode = this.head;

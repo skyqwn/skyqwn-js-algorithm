@@ -15,12 +15,11 @@ class LinkedList {
     this.length = 1;
   }
   prepend(value) {
-    const newNode = new Node(value);
-    newNode.next = this.head;
-    this.head = newNode;
+    const newNdoe = new Node(value);
+    newNdoe.next = this.head;
+    this.head = newNdoe;
     this.length++;
   }
-
   append(value) {
     const newNode = new Node(value);
     this.tail.next = newNode;
@@ -46,20 +45,18 @@ class LinkedList {
       return;
     }
     const newNode = new Node(value);
-    const prevNdoe = this.findNode(index - 1);
-    const nextNode = prevNdoe.next;
+    const prevNode = this.findNode(index - 1);
+    const nextNode = prevNode.next;
     newNode.next = nextNode;
-    prevNdoe.next = newNode;
+    prevNode.next = newNode;
     this.length++;
   }
-
   remove(index) {
     const prevNode = this.findNode(index - 1);
     const removeNode = prevNode.next;
     prevNode.next = removeNode.next;
     this.length--;
   }
-
   printList() {
     const array = [];
     let currentNode = this.head;

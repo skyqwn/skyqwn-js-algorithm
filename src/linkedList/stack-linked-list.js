@@ -36,6 +36,7 @@ class Stack {
     } else {
       this.top = this.top.next;
     }
+
     this.length--;
     return removedNode;
   }

@@ -105,3 +105,5 @@ linkedList.append("Mary");
 linkedList.printList();
 linkedList.remove(1);
 linkedList.printList();
+linkedList.remove(1);
+linkedList.printList();
